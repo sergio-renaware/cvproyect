@@ -4,6 +4,8 @@ import profilePicture from "../assets/profilePicture.png"
 import SwiperInfoCard from './SwiperInfoCard';
 import SocialIcons from './SocialIcons';
 import { TypeAnimation } from 'react-type-animation';
+import CustomButton from './ui/CustomButton';
+import { faDownload, faContactCard } from '@fortawesome/free-solid-svg-icons'
 
 const InfoCardProfile = () => {
 
@@ -17,7 +19,7 @@ const InfoCardProfile = () => {
                             <SwiperInfoCard />
                         </div>
                         <div className="image">
-                            <img className="profile-image" src={profilePicture} alt="Sergio Beleño" />
+                            <img className="profile-image" src={profilePicture} alt="Sergio Beleño" title="Profile picture - Sergio Beleño" />
                         </div>
                         <div className="title">Sergio Beleño</div>
                         <div className="subtitle">
@@ -39,15 +41,14 @@ const InfoCardProfile = () => {
                             <SocialIcons />
                         </div>
                     </div>
-                    <div className="lnks">
-                        <a href="https://ryancv.bslthemes.com/wp-content/uploads/2022/07/Dublin-Resume-Template-Modern.pdf" className="lnk" target="_blank">
-                            <span className="text">Download CV</span>
-                            <span className="ion ion-android-download"></span>
-                        </a>
-                        <a href="/developer/#contact" className="lnk">
-                            <span className="text">Contact Me</span>
-                            <span className="ion ion-ios-paperplane"></span>
-                        </a>
+                    <div className="buttons-info-card flex-center">
+                        <CustomButton
+                            text='Download'
+                            icon={faDownload} />
+                        <CustomButton
+                            text='Contact Me'
+                            icon={faContactCard}
+                        />
                     </div>
                 </div>
             </div>

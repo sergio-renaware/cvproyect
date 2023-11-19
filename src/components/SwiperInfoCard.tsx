@@ -16,23 +16,23 @@ const SwiperInfoCard = () => {
             effect={'fade'}
             loop={true}
             autoplay={{
-                delay: 2500,
+                delay: 2000,
                 disableOnInteraction: false,
                 stopOnLastSlide: false,
                 pauseOnMouseEnter: false,
             }}
-            speed={1800}
+            speed={1400}
             modules={[Autoplay, EffectFade]}
             className="mySwiper"
         >
             <SwiperSlide>
-                <img src={backgroundOneSwiper} alt="Wallpaper 1" />
+                <img src={backgroundOneSwiper} alt="Wallpaper 1" title="Wallpaper" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={backgroundTwoSwiper} alt="Wallpaper 2" />
+                <img src={backgroundTwoSwiper} alt="Wallpaper 2" title="Wallpaper" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={backgroundThreeSwiper} alt="Wallpaper 3" />
+                <img src={backgroundThreeSwiper} alt="Wallpaper 3" title="Wallpaper" />
             </SwiperSlide>
         </Swiper>
     )

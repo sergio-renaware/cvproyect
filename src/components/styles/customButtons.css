@@ -1,0 +1,19 @@
+.custom-button{
+    padding: 5px;
+    border: 2px solid var(--secondary-background-color-lighter);
+    width: 100%;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
+.custom-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-button .icon{
+    padding: 8px;
+}

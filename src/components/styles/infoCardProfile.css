@@ -11,15 +11,11 @@
     -khtml-border-radius: 4px;
 }
 
-.swiper-wrapper{
-    background-image: url(https://ryancv.bslthemes.com/developer/wp-content/uploads/sites/3/2022/07/dev-bg-1200x800.jpg);
-    background-size: 544px;
-}
-
 .info-card .slide{
     position: relative;
-    top: -50px;
-    height: 100px;
+    top: -40px;
+    height: calc(50px + 20vh);
+    max-height: 70px;
     z-index: -1;
 }
 
@@ -27,14 +23,14 @@
     top: -30px;
     left: 0;
     width: 100%;
-    height: calc(100% + 30px);
+    height: calc(200px + 20vh);
     max-height: 350px;
     object-fit: cover;
     object-position: center;
 }
 
 .info-card .swiper-wrapper img {
-    height: calc(100% + 30px);
+    height: calc(200px + 20vh);
     max-height: 350px;
 }
 

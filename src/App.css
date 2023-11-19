@@ -2,13 +2,17 @@
     0% {
         opacity: 0;
     }
+    40% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
     }
 }
 
 .App {
-    animation: fadeIn 2s;
+    overflow: hidden;
+    animation: fadeIn 1.5s;
     margin: 8vh 6vw;
     position: relative;
     top: 0;
