@@ -43,11 +43,13 @@ const InfoCardProfile = () => {
                     </div>
                     <div className="buttons-info-card flex-center">
                         <CustomButton
-                            text='Download'
+                            text='Download CV'
                             icon={faDownload} />
                         <CustomButton
                             text='Contact Me'
                             icon={faContactCard}
+                            href='https://calendly.com/serbeldiaz/30min'
+                            blank={true}
                         />
                     </div>
                 </div>

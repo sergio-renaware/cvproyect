@@ -1,8 +1,7 @@
 .info-card {
     position: relative;
-    overflow: hidden;
     float: left;
-    width: 480px;
+    width: 470px;
     height: 100%;
     z-index: 11;
     border-radius: 4px;
@@ -30,14 +29,14 @@
 }
 
 .info-card .swiper-wrapper img {
-    height: calc(200px + 20vh);
-    max-height: 350px;
+    height: 320px;
+    object-fit: cover;
+    width: 800px;
 }
 
 .info-card .profile {
     padding: 0;
     position: relative;
-    overflow: hidden;
     height: 100%;
     background-color: var(--secondary-background-color-light);
     text-align: center;
@@ -48,8 +47,25 @@
     -khtml-border-radius: 4px;
 }
 
+.info-card:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(135deg,var(--primary-color-shadow) 0%,rgba(246,184,70,.01) 100%);
+    background: -webkit-linear-gradient(135deg,var(--primary-color-shadow) 0%,rgba(246,184,70,.01) 100%);
+    background: linear-gradient(135deg,var(--primary-color-shadow) 0%,rgba(246,184,70,.01) 100%);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+}
+
 .info-card .profile .profile-content {
-    padding: 40px;
+    padding: 20px;
+    overflow: hidden;
     position: relative;
     left: 0;
     width: 100%;
@@ -86,4 +102,31 @@
 
 .info-card .subtitle{
     color: var(--selected-item-color);
+    font-weight: 600;
+}
+
+.info-card .title {
+    font-family: 'Lekton';
+    font-size: 34px;
+    line-height: 32px;
+    font-weight: 600;
+    color: rgba(255,255,255,.9);
+    position: relative;
+    top: -5px;
+}
+
+
+/* Mobile  */
+@media screen and (max-width: 720px) {
+    .info-card{
+        width: 100%;
+    }
+
+    .info-card .profile{
+        height: auto;
+    }
+
+    .info-card:after{
+        display: none;
+    }
 }

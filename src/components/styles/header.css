@@ -61,3 +61,26 @@ header #menu-main-menu li .one-page-menu-item span.name {
     width: 100%;
     display: block;
 }
+
+
+/* Mobile  */
+@media screen and (max-width: 720px) {
+    header{
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+    }
+
+    header #menu-main-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    header #menu-main-menu li{
+        width: 100px;
+        margin: 10px;
+        background-color: transparent;
+    }
+}

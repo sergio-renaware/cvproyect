@@ -25,7 +25,7 @@ const Header = () => {
                     </a>
                 </li>
                 <li className="menu-item">
-                    <a href="#contact" className="one-page-menu-item" title='Contact'>
+                    <a href="https://calendly.com/serbeldiaz/30min" className="one-page-menu-item" title='Contact' target="_blank">
                         <FontAwesomeIcon icon={faContactCard} />
                         <span className="name">Contact</span>
                     </a>

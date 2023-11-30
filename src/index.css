@@ -1,5 +1,6 @@
 :root {
   --primary-color: #6ec1e4;
+  --primary-color-shadow: rgba(70, 129, 246, 0.4);
   --secondary-color: #54595f;
   --hover-item-color: #2788ff;
   --selected-item-color: #187efc;
@@ -11,8 +12,13 @@
   --text-color: #7a7a7a;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+  width: 6px;
   background-color: var(--secondary-background-color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
