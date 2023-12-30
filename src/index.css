@@ -100,7 +100,7 @@ a {
 }
 
 .bold{
-  font-weight: 600;
+  font-weight: bold;
   font-family: 'Lekton';
   color: white;
 }

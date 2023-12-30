@@ -10,7 +10,14 @@
     -khtml-border-radius: 4px;
 }
 
+.info-card .social{
+    height: 48px;
+    min-height: 48px;
+}
+
 .info-card h2{
+    min-height: 26px;
+    height: 26px;
     font-size: 16px;
     font-weight: 400!important;
 }
@@ -37,6 +44,11 @@
     height: 320px;
     object-fit: cover;
     width: 480px;
+}
+
+.buttons-info-card.flex-center{
+    height: 60px;
+    min-height: 60px;
 }
 
 .info-card .profile {
@@ -111,10 +123,12 @@
 }
 
 .info-card .title {
+    min-height: 32px;
+    height: 32px;
     font-family: 'Lekton';
     font-size: 34px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: bold;
     color: rgba(255,255,255,.9);
     position: relative;
     top: -5px;

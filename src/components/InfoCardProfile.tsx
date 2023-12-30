@@ -20,7 +20,7 @@ const InfoCardProfile = () => {
                             <SwiperInfoCard />
                         </div>
                         <div className="image">
-                            <img className="profile-image" src={profilePicture} alt="Sergio Beleño" title="Profile picture - Sergio Beleño" />
+                            <img className="profile-image" src={profilePicture} alt="Sergio Beleño" height={220} width={220} title="Profile picture - Sergio Beleño" />
                         </div>
                         <h1 className="title">Sergio Beleño</h1>
                         <h2 className="subtitle">
