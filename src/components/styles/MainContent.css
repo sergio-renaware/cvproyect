@@ -1,5 +1,5 @@
 .card-wrap {
-    max-height: 450px;
+    max-height: 480px;
     padding: 30px 30px 0;
     height: 100%;
     overflow: auto;
@@ -27,6 +27,87 @@
     padding-bottom: 50px;
 }
 
+.card-wrap .info-list ul li strong:after {
+    position: relative;
+    content: ' . . . .';
+    font-weight: 400;
+    display: inline;
+    margin-left: -3px;
+    z-index: 2;
+}
+
+.card-wrap .info-list ul li strong {
+    margin-right: 8px;
+    padding: 0;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.row .col {
+    padding: 30px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.card-wrap .pricing{
+    max-width: 400px;
+}
+
+.card-wrap .subs-button {
+    font-family: 'Lekton';
+    background: var(--selected-item-color);
+    color: var(--primary-background-color);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 5px 50px;
+    border-radius: 40px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+}
+
+.card-wrap .pricing .amount {
+    margin: 0 0 30px;
+}
+
+.card-wrap .pricing .amount .dollar, 
+.card-wrap .pricing .amount .period {
+    margin: 0 3px;
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+.card-wrap .pricing .amount .period {
+    bottom: auto;
+    top: 5px;
+    vertical-align: bottom;
+}
+
+.card-wrap .pricing .amount .dollar{
+    color: white;
+}
+
+.card-wrap .pricing .name{
+    margin: 0 0 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.card-wrap .pricing .amount .number {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 42px;
+    line-height: 32px;
+    font-weight: 600;
+    color: white;
+}
+
 .card-wrap .title:after {
     content: '';
     width: 100%;
@@ -47,7 +128,6 @@
 .card-wrap .row {
     margin: 0 -30px;
     position: relative;
-    font-size: 0;
 }
 
 .card-wrap .row .col {
@@ -82,6 +162,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card-wrap .pt1 {
+    padding-top: 15px;
+}
+
+.card-wrap .info-list ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+}
+
+.card-wrap .info-list ul li {
+    padding: 0 0 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+}
+
+.card-wrap .light{
+    font-weight: 400;
+    color: var(--text-color);
 }
 
 /* Tablet */

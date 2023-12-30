@@ -1,6 +1,6 @@
 :root {
   --primary-color: #6ec1e4;
-  --primary-color-shadow: rgba(70, 129, 246, 0.4);
+  --primary-color-shadow: #6daaf560;
   --secondary-color: #54595f;
   /* --hover-item-color: #2788ff; */
   --hover-item-color: #6daaf5;
@@ -92,6 +92,11 @@ a {
   display: flex;          /* Modern browsers */
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .bold{
