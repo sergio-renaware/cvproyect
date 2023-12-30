@@ -57,6 +57,15 @@ header #menu-main-menu li:hover a{
     color: var(--hover-item-color);
 }
 
+header #menu-main-menu li.current-menu-item{
+    margin: 6px;
+    padding: 8px;
+}
+
+header #menu-main-menu li.current-menu-item a{
+    color: var(--hover-item-color);
+}
+
 header #menu-main-menu li .one-page-menu-item span.name {
     width: 100%;
     display: block;

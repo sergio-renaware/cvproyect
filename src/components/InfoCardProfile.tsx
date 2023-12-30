@@ -1,16 +1,17 @@
 import './styles/infoCardProfile.css';
 import Header from './Header';
-import profilePicture from "../assets/profilePicture.png"
+import profilePicture from "../assets/profilePicture.jpg"
 import SwiperInfoCard from './SwiperInfoCard';
 import SocialIcons from './SocialIcons';
 import { TypeAnimation } from 'react-type-animation';
 import CustomButton from './ui/CustomButton';
 import { faDownload, faContactCard } from '@fortawesome/free-solid-svg-icons'
+import MainContent from './MainContent';
 
 const InfoCardProfile = () => {
 
     return (
-        <div>
+        <div className='flex'>
             <Header />
             <div className="info-card">
                 <div className="profile">
@@ -21,8 +22,8 @@ const InfoCardProfile = () => {
                         <div className="image">
                             <img className="profile-image" src={profilePicture} alt="Sergio Beleño" title="Profile picture - Sergio Beleño" />
                         </div>
-                        <div className="title">Sergio Beleño</div>
-                        <div className="subtitle">
+                        <h1 className="title">Sergio Beleño</h1>
+                        <h2 className="subtitle">
                             <TypeAnimation
                                 sequence={[
                                     'Technical Lead (VTEX)',
@@ -36,7 +37,7 @@ const InfoCardProfile = () => {
                                 style={{ display: 'inline-block' }}
                                 repeat={Infinity}
                             />
-                        </div>
+                        </h2>
                         <div className="social">
                             <SocialIcons />
                         </div>
@@ -44,7 +45,10 @@ const InfoCardProfile = () => {
                     <div className="buttons-info-card flex-center">
                         <CustomButton
                             text='Download CV'
-                            icon={faDownload} />
+                            icon={faDownload} 
+                            href='https://www.serbeld.space/sergiobelenocv.pdf'
+                            blank={true}
+                        />
                         <CustomButton
                             text='Contact Me'
                             icon={faContactCard}
@@ -54,6 +58,7 @@ const InfoCardProfile = () => {
                     </div>
                 </div>
             </div>
+            <MainContent />
         </div>
     )
 }

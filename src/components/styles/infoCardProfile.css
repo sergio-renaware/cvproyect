@@ -2,12 +2,17 @@
     position: relative;
     float: left;
     width: 470px;
-    height: 100%;
+    margin-bottom: 20px;
     z-index: 11;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     -khtml-border-radius: 4px;
+}
+
+.info-card h2{
+    font-size: 16px;
+    font-weight: 400!important;
 }
 
 .info-card .slide{
@@ -31,13 +36,13 @@
 .info-card .swiper-wrapper img {
     height: 320px;
     object-fit: cover;
-    width: 800px;
+    width: 480px;
 }
 
 .info-card .profile {
     padding: 0;
     position: relative;
-    height: 100%;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
     background-color: var(--secondary-background-color-light);
     text-align: center;
     z-index: 10;
