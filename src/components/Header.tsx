@@ -36,13 +36,13 @@ const Header = () => {
                     </a>
                 </li>
                 <li className={`menu-item`}>
-                    <a href="https://www.serbeld.space/en" className="one-page-menu-item" title='Blog'  target="_blank">
+                    <a href="https://www.serbeld.space/en" className="one-page-menu-item" title='Blog'  target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faNewspaper} />
                         <span className="name">Blog</span>
                     </a>
                 </li>
                 <li className={`menu-item`}>
-                    <a href="https://calendly.com/serbeldiaz/30min" className="one-page-menu-item" title='Contact' target="_blank">
+                    <a href="https://calendly.com/serbeldiaz/30min" className="one-page-menu-item" title='Contact' target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faContactCard} />
                         <span className="name">Contact</span>
                     </a>
