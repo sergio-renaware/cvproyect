@@ -62,7 +62,7 @@
     color: var(--primary-background-color);
     text-transform: uppercase;
     font-weight: 800;
-    padding: 5px 50px;
+    padding: 5px 30px;
     border-radius: 40px;
     box-shadow: 0 3px 3px rgba(0,0,0,.3);
 }
@@ -200,6 +200,10 @@
     .card-wrap .content {
         max-width: 480px;
         margin: auto;
+    }
+
+    .card-wrap .pricing {
+        max-width: 100%;
     }
 }
 

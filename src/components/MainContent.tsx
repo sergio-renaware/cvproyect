@@ -170,7 +170,7 @@ const MainContent = () => {
                     <span>Pricing</span>
                 </h3>
                 <div className='description'>
-                    <div className="flex space-evenly row service-items border-line-v">
+                    <div className="col flex space-evenly service-items border-line-v">
                         <div className="service-item">
                             <div className="icon">
                                 {" "}
@@ -193,7 +193,8 @@ const MainContent = () => {
                             <div className='name bold'>
                                 <h4>E-commerce architect engineer</h4>
                                 <h5 className='light'>
-                                    Elevate your e-commerce vision! Explore unmatched architecture expertise. Click for a free problem evaluation!                                </h5>
+                                    Elevate your e-commerce vision! Explore unmatched architecture expertise. Click for a free problem evaluation!
+                                </h5>
                             </div>
                             <div className="amount">
                                 <span className="dollar">
