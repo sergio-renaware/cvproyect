@@ -35,6 +35,7 @@
     display: inline;
     margin-left: -3px;
     z-index: 2;
+    font-size: 10px;
 }
 
 .card-wrap .info-list ul li strong {
