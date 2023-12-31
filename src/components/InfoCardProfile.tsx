@@ -7,12 +7,20 @@ import { TypeAnimation } from 'react-type-animation';
 import CustomButton from './ui/CustomButton';
 import { faDownload, faContactCard } from '@fortawesome/free-solid-svg-icons'
 import MainContent from './MainContent';
+import { Helmet } from 'react-helmet';
 
 const InfoCardProfile = () => {
 
     return (
         <div className='flex'>
             <Header />
+            <Helmet>
+                <meta property="og:title" content="Sergio Beleño - Technical Lead (VTEX) | Full Stack Web Developer" />
+                <meta property="og:description" content="Sergio Beleño, VTEX Technical Lead & Full Stack Web Developer. Crafting digital excellence with e-commerce mastery. Explore Sergio's CV for a showcase of technical leadership and innovation in web development." />
+                <meta property="og:image" content={profilePicture} />
+                <meta property="og:url" content="www.serbeld.space" />
+                <meta property="og:type" content="website" />
+            </Helmet>
             <div className="info-card">
                 <div className="profile">
                     <div className="profile-content">
@@ -45,7 +53,7 @@ const InfoCardProfile = () => {
                     <div className="buttons-info-card flex-center">
                         <CustomButton
                             text='Download CV'
-                            icon={faDownload} 
+                            icon={faDownload}
                             href='https://www.serbeld.space/sergiobelenocv.pdf'
                             blank={true}
                         />
