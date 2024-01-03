@@ -7,20 +7,12 @@ import { TypeAnimation } from 'react-type-animation';
 import CustomButton from './ui/CustomButton';
 import { faDownload, faContactCard } from '@fortawesome/free-solid-svg-icons'
 import MainContent from './MainContent';
-import { Helmet } from 'react-helmet';
 
 const InfoCardProfile = () => {
 
     return (
-        <div className='flex'>
+        <div className='flex' id='person'>
             <Header />
-            <Helmet>
-                <meta property="og:title" content="Sergio Beleño - Technical Lead (VTEX) | Full Stack Web Developer" />
-                <meta property="og:description" content="Sergio Beleño, VTEX Technical Lead & Full Stack Web Developer. Crafting digital excellence with e-commerce mastery. Explore Sergio's CV for a showcase of technical leadership and innovation in web development." />
-                <meta property="og:image" content={profilePicture} />
-                <meta property="og:url" content="www.serbeld.space" />
-                <meta property="og:type" content="website" />
-            </Helmet>
             <div className="info-card">
                 <div className="profile">
                     <div className="profile-content">
@@ -28,7 +20,7 @@ const InfoCardProfile = () => {
                             <SwiperInfoCard />
                         </div>
                         <div className="image">
-                            <img className="profile-image" src={profilePicture} alt="Sergio Beleño" height={220} width={220} title="Profile picture - Sergio Beleño" />
+                            <img className="profile-image" rel="image_src" id='profilePicture' src={profilePicture} alt="Sergio Beleño - Technical Lead (VTEX) | Full Stack Web Developer" height={220} width={220} title="Profile picture - Sergio Beleño" />
                         </div>
                         <h1 className="title">Sergio Beleño</h1>
                         <h2 className="subtitle">
