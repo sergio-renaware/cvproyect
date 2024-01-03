@@ -26,16 +26,32 @@
     <title>Sergio Beleño - Technical Lead (VTEX) | Full Stack Web
       Developer</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async
-      src="https://www.googletagmanager.com/gtag/js?id=G-RBBPS93NEH">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <script async>
+        // Function to check if the device is a desktop
+        function isDesktop() {
+            return window.innerWidth > 768; // Adjust the threshold as needed
+        }
 
-      gtag('config', 'G-RBBPS93NEH');
+        // Function to dynamically insert the Google tag code for desktop
+        function insertGoogleTagForDesktop() {
+            if (isDesktop()) {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RBBPS93NEH';
+                
+                document.head.appendChild(script);
+
+                script.onload = function() {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-RBBPS93NEH');
+                };
+            }
+        }
+
+        // Call the function to insert the Google tag for desktop
+        insertGoogleTagForDesktop();
     </script>
 
     <script type="application/ld+json">
