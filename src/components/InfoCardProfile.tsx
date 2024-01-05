@@ -1,6 +1,5 @@
 import './styles/infoCardProfile.css';
 import Header from './Header';
-import profilePicture from "../assets/profilePicture.jpg"
 import SwiperInfoCard from './SwiperInfoCard';
 import SocialIcons from './SocialIcons';
 import { TypeAnimation } from 'react-type-animation';
@@ -20,7 +19,7 @@ const InfoCardProfile = () => {
                             <SwiperInfoCard />
                         </div>
                         <div className="image">
-                            <img className="profile-image" rel="image_src" id='profilePicture' src={profilePicture} alt="Sergio Beleño - Technical Lead (VTEX) | Full Stack Web Developer" height={220} width={220} title="Profile picture - Sergio Beleño" />
+                            <img className="profile-image" rel="image_src" id='profilePicture' src="https://www.serbeld.space/profilePicture.jpg" alt="Sergio Beleño - Technical Lead (VTEX) | Full Stack Web Developer" height={220} width={220} title="Profile picture - Sergio Beleño" />
                         </div>
                         <h1 className="title">Sergio Beleño</h1>
                         <h2 className="subtitle">
