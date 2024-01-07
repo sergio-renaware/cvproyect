@@ -10,17 +10,22 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.serbeld.space/resume</loc>
+        <loc>https://www.serbeld.space/#/home</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.serbeld.space/contact</loc>
+        <loc>https://www.serbeld.space/#/resume</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.serbeld.space/blog</loc>
+        <loc>https://www.serbeld.space/#/contact</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.serbeld.space/#/blog</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
