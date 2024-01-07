@@ -1,0 +1,16 @@
+.blog ul{
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    background-color: var(--secondary-background-color-lighter);
+    padding: 10px;
+}
+
+.blog h1{
+    padding: 10px;
+}
+
+.blog .showMore{
+    padding: 10px
+}

@@ -2,50 +2,41 @@ import './styles/header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faList, faNewspaper, faContactCard } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    const [hash, setHash] = useState("#home");
+    const [path, setPath] = useState("#home");
 
     useEffect(() => {
-        // Listen for the hashchange event
-        window.addEventListener('hashchange', handleHashChange);
-
-        // Clean up the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('hashchange', handleHashChange);
-        };
-    }, []); // Empty dependency array ensures the effect runs once on mount and cleans up on unmount
-
-    function handleHashChange() {
-        setHash(window.location.hash);
-    }
+        setPath(globalThis.location.pathname);
+    }, []); 
 
     return (
         <header>
             <ul id="menu-main-menu">
-                <li className={`menu-item ${(hash === '#home' || hash === "") ? 'current-menu-item' : ''}`}>
-                    <a href="#home" className="one-page-menu-item" title='About me'>
+                <li className={`menu-item ${(path === '/' || path === "") ? 'current-menu-item' : ''}`}>
+                    <NavLink to="/" className="one-page-menu-item" title='About me'>
                         <FontAwesomeIcon icon={faUser} />
                         <span className="name">About</span>
-                    </a>
+                    </NavLink>
                 </li>
-                <li className={`menu-item ${hash === '#resume' ? 'current-menu-item' : ''}`}>
-                    <a href="#resume" className="one-page-menu-item" title='Resume'>
+                <li className={`menu-item ${path === '/resume' ? 'current-menu-item' : ''}`}>
+                    <NavLink to="/resume" className="one-page-menu-item" title='Resume'>
                         <FontAwesomeIcon icon={faList} />
                         <span className="name">Resume</span>
-                    </a>
+                    </NavLink>
                 </li>
-                <li className={`menu-item`}>
-                    <a href="https://www.serbeld.space/en" className="one-page-menu-item" title='Blog'  target="_blank" rel="noreferrer">
+                <li className={`menu-item ${path === '/blog' ? 'current-menu-item' : ''}`}>
+                    <NavLink to="/blog" className="one-page-menu-item" title='Blog'>
                         <FontAwesomeIcon icon={faNewspaper} />
                         <span className="name">Blog</span>
-                    </a>
+                    </NavLink>
                 </li>
-                <li className={`menu-item`}>
-                    <a href="https://calendly.com/serbeldiaz/30min" className="one-page-menu-item" title='Contact' target="_blank" rel="noreferrer">
+                <li className={`menu-item ${path === '/contact' ? 'current-menu-item' : ''}`}>
+                    <NavLink to="/contact" className="one-page-menu-item" title='Contact'>
                         <FontAwesomeIcon icon={faContactCard} />
                         <span className="name">Contact</span>
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </header>
