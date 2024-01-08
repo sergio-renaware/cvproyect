@@ -14,11 +14,11 @@ const Header = () => {
     return (
         <header>
             <ul id="menu-main-menu">
-                <li className={`menu-item ${(path === '#/home' || path === "") ? 'current-menu-item' : ''}`}>
-                    <NavLink to="/home" className="one-page-menu-item" title='About me'>
+                <li className={`menu-item ${(path === '#/home' || path === '#/' || path === "#/" || path === '') ? 'current-menu-item' : ''}`}>
+                    <a href="https://www.serbeld.space" className="one-page-menu-item" title='About me'>
                         <FontAwesomeIcon icon={faUser} />
                         <span className="name">About</span>
-                    </NavLink>
+                    </a>
                 </li>
                 <li className={`menu-item ${path === '#/resume' ? 'current-menu-item' : ''}`}>
                     <NavLink to="/resume" className="one-page-menu-item" title='Resume'>

@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 import '../components/styles/MainContent.css'
 import Header from "../components/Header";
@@ -56,7 +55,7 @@ export default function NotFoundPage() {
                         <h1 style={headingStyle}>404 - Not Found</h1>
                         <h2 style={subHeadingStyle}>Apologies, the requested page is unavailable. Please check the URL or navigate to another page. Thank you for your understanding.</h2>
                         <p>
-                            Go to the <NavLink to="/" title="Homepage" style={linkStyle}>Homepage</NavLink>.
+                            Go to the <a href="https://www.serbeld.space" title="Homepage" style={linkStyle}>Homepage</a>.
                         </p>
                     </div>
                 </div>
